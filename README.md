@@ -1,6 +1,6 @@
 # CISA Advisory Monitor
 
-A stateless GitHub Action that monitors [CISA Cybersecurity Alerts](https://www.cisa.gov/news-events/cybersecurity-advisories?f%5B0%5D=advisory_type%3A93) and sends structured alerts to **Slack** and **Telegram** — no database required.
+A stateless GitHub Action that monitors [CISA Cybersecurity Alerts](https://www.cisa.gov/news-events/cybersecurity-advisories?f%5B0%5D=advisory_type%3A93) and sends structured alerts to **Slack** and **Telegram** 
 
 ## How It Works
 
