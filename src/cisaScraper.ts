@@ -98,7 +98,14 @@ function parseAdvisoryList(
     });
   });
 
-  logger.info({ count: advisories.length }, 'Advisories scraped from listing');
+  // Sort by published date descending (newest first)
+  advisories.sort((a, b) => {
+    const dateA = a.publishedDate ? new Date(a.publishedDate).getTime() : 0;
+    const dateB = b.publishedDate ? new Date(b.publishedDate).getTime() : 0;
+    return dateB - dateA;
+  });
+
+  logger.info({ count: advisories.length }, 'Advisories scraped from listing (sorted newest first)');
   return advisories;
 }
 
